@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registration</title>
+    <style>
+        .colhover:hover {
+            background-color: #272727;
+            font-size: 150%;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .colhover {
+            transition: all 0.5s;
+        }
+        .btn {
+            width: 200px;
+            padding: 12px;
+            color: white;
+            font-size: 20px;
+            background-color: #2A84D8;
+            font-family: "Arial Narrow";
+            border: 0;
+            border-radius: 5px;
+        }
+        .CinputsName {
+            width: 130px;
+            padding: 4px;
+            font-size: 20px;
+            font-family: "Arial Narrow";
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        .Cinputs {
+            width: 300px;
+            padding: 5px;
+            font-size: 20px;
+            font-family: "Arial Narrow";
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        button {
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #000000;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 24px;
+            padding: 10px;
+            width: 100%;
+            transition: all 0.45s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            width: 185%;
+            background-color: #239B56;
+        }
+        body {
+            background-image: url("image.jpg");
+            background-repeat: repeat-y;
+            background-size: cover;
+            color: #fff;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .form-container {
+            position: relative;
+            z-index: 2;
+        }
+        .header1 {
+            margin: 20px 0;
+        }
+        .header1 img {
+            margin-right: 20px;
+        }
+        .header1 a {
+            color: rgb(226, 226, 226);
+            text-decoration: none;
+        }
+        .header1 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container form-container">
+        <div class="header1 d-flex justify-content-between align-items-center">
+            <div>
+                <font size="4"><b>Already Registered?</b></font>
+                <a href="index.html">Login here</a>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-6 col-lg-5">
+                <form id="registration" name="registration" method="post" action="thankyou1.html">
+                    <div class="form-group">
+                        <label for="name1">Name</label><br>
+                        <input type="text" name="name1" placeholder="First" class="CinputsName form-control d-inline-block">
+                        <input type="text" name="name2" placeholder="Last" class="CinputsName form-control d-inline-block">
+                    </div>
+                    <div class="form-group">
+                        <label for="uname">Choose your username</label>
+                        <input type="text" name="uname" placeholder="@service.com" class="Cinputs form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Create a password</label>
+                        <input type="password" name="password" class="Cinputs form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmpassword">Confirm your password</label>
+                        <input type="password" name="confirmpassword" class="Cinputs form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date Of Birth</label>
+                        <input type="date" name="dob" class="Cinputs form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label><br>
+                        <input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </div>
+                    <div class="form-group">
+                        <label for="mobno">Mobile No.</label>
+                        <div class="d-flex">
+                            <select class="Cinputs form-control" style="width: 80px;">
+                                <option value="+91">+91</option>
+                            </select>
+                            <input type="text" name="mobno" class="Cinputs form-control" style="flex: 1;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Current email address</label>
+                        <input type="text" name="email" class="Cinputs form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select name="location" class="Cinputs form-control">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Surat">Surat</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" name="agreement" class="form-check-input" id="agreement">
+                        <label class="form-check-label" for="agreement">I accept the agreement</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
