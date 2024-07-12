@@ -6,6 +6,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <title>Registration</title>
     <style>
+        /* Styling for hover effect on columns */
         .colhover:hover {
             background-color: #272727;
             font-size: 150%;
@@ -15,6 +16,7 @@
         .colhover {
             transition: all 0.5s;
         }
+        /* Styling for buttons */
         .btn {
             width: 200px;
             padding: 12px;
@@ -25,6 +27,7 @@
             border: 0;
             border-radius: 5px;
         }
+        /* Styling for input fields */
         .CinputsName {
             width: 130px;
             padding: 4px;
@@ -41,6 +44,7 @@
             border: 1px solid grey;
             border-radius: 5px;
         }
+        /* General button styling */
         button {
             display: inline-block;
             border-radius: 10px;
@@ -59,12 +63,14 @@
             width: 185%;
             background-color: #239B56;
         }
+        /* Page background styling */
         body {
             background-image: url("image.jpg");
             background-repeat: repeat-y;
             background-size: cover;
             color: #fff;
         }
+        /* Overlay to darken the background image */
         .overlay {
             background: rgba(0, 0, 0, 0.6);
             position: absolute;
@@ -96,12 +102,14 @@
 <body>
     <div class="overlay"></div>
     <div class="container form-container">
+        <!-- Header section with login link -->
         <div class="header1 d-flex justify-content-between align-items-center">
             <div>
-                <font size="4"><b>Already Registered?</b></font>
+                <b>Already Registered?</b>
                 <a href="index.html">Login here</a>
             </div>
         </div>
+        <!-- Registration form -->
         <div class="row justify-content-end">
             <div class="col-md-6 col-lg-5">
                 <form id="registration" name="registration" method="post" action="thankyou1.html">
@@ -162,6 +170,7 @@
             </div>
         </div>
     </div>
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
